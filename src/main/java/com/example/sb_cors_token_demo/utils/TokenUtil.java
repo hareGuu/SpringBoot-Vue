@@ -11,7 +11,7 @@ import java.util.Date;
 public class TokenUtil {
 
     private static final long EXPIRE_TIME= 10*60*60*1000;
-    private static final String TOKEN_SECRET="txdy";  //密钥盐
+    private static final String TOKEN_SECRET = "salt_liuS";  //密钥盐
 
     /**
      * 签名生成

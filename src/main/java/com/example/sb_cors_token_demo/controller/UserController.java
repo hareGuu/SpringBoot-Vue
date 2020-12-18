@@ -18,7 +18,7 @@ public class UserController{
         String username=(String)para.get("username");
         String password=(String)para.get("password");
         String token= TokenUtil.sign(new User(username,password));
-        HashMap<String,Object> hs=new HashMap<>();
+        HashMap<String,Object> hs = new HashMap<>();
         hs.put("token",token);
         ObjectMapper objectMapper=new ObjectMapper();
         return objectMapper.writeValueAsString(hs);
