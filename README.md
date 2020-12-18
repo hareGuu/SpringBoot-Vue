@@ -4,7 +4,7 @@
 
 ## 后台环境
 
-> Spring Boot版本 2.2.1.RELEASE
+> Spring Boot版本 2.4.0.RELEASE
 >
 > JDK版本	1.8
 >

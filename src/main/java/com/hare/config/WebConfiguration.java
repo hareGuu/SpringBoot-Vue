@@ -25,13 +25,24 @@ public class WebConfiguration implements WebMvcConfigurer {
         this.tokenInterceptor = tokenInterceptor;
     }
 
+    /**
+     * 添加视图控制器
+     * @param registry
+     */
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("index");
+        registry.addViewController("/index.html").setViewName("index");
+        registry.addViewController("/main.html").setViewName("dashboard");
+    }
+
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowCredentials(true)
+        registry.addMapping("/**") // 设置允许跨域的路由
+                .allowCredentials(true) // 是否允许证书（cookies）
                 .allowedHeaders("*")
-                .allowedMethods("*")
-                .allowedOrigins("*");
+                .allowedMethods("*") // 设置允许的方法
+                .allowedOriginPatterns("*"); // 设置允许跨域请求的域名
     }
 
     @Override
@@ -44,14 +55,20 @@ public class WebConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry){
         List<String> excludePath = new ArrayList<>();
         //排除拦截
+        excludePath.add("/index.html");
+        excludePath.add("/");
         excludePath.add("/user/register");  //登录
+        excludePath.add("/user/hello");  //登录
         excludePath.add("/user/login");     //注册
         excludePath.add("/static/**");  //静态资源
-        excludePath.add("/assets/**");  //静态资源
+        excludePath.add("/asserts/**");  //静态资源
+        excludePath.add("/webjars/**");  //静态资源   jquery,bootStrap等
 
         registry.addInterceptor(tokenInterceptor)
                 .addPathPatterns("/**")
                 .excludePathPatterns(excludePath);
         WebMvcConfigurer.super.addInterceptors(registry);
     }
+
+
 }
