@@ -1,7 +1,7 @@
-package com.example.sb_cors_token_demo.interceptor;
+package com.hare.interceptor;
 
 import com.alibaba.fastjson.JSONObject;
-import com.example.sb_cors_token_demo.utils.TokenUtil;
+import com.hare.utils.TokenUtil;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 

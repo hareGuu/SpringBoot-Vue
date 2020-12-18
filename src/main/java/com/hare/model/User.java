@@ -1,4 +1,4 @@
-package com.example.sb_cors_token_demo.model;
+package com.hare.model;
 
 import lombok.Data;
 

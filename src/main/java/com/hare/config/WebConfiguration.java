@@ -1,6 +1,6 @@
-package com.example.sb_cors_token_demo.config;
+package com.hare.config;
 
-import com.example.sb_cors_token_demo.interceptor.TokenInterceptor;
+import com.hare.interceptor.TokenInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.concurrent.ConcurrentTaskExecutor;
 import org.springframework.web.servlet.config.annotation.*;

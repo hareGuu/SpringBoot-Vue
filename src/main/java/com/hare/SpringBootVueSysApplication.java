@@ -1,13 +1,13 @@
-package com.example.sb_cors_token_demo;
+package com.hare;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SbCorsTokenDemoApplication {
+public class SpringBootVueSysApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SbCorsTokenDemoApplication.class, args);
+        SpringApplication.run(SpringBootVueSysApplication.class, args);
     }
 
 }

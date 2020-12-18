@@ -1,10 +1,10 @@
-package com.example.sb_cors_token_demo;
+package com.hare;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SbCorsTokenDemoApplicationTests {
+class SpringBootVueSysApplicationTests {
 
     @Test
     void contextLoads() {

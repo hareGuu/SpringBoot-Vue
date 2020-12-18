@@ -1,10 +1,10 @@
-package com.example.sb_cors_token_demo.utils;
+package com.hare.utils;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.example.sb_cors_token_demo.model.User;
+import com.hare.model.User;
 
 import java.util.Date;
 

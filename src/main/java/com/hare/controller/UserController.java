@@ -1,7 +1,7 @@
-package com.example.sb_cors_token_demo.controller;
+package com.hare.controller;
 
-import com.example.sb_cors_token_demo.model.User;
-import com.example.sb_cors_token_demo.utils.TokenUtil;
+import com.hare.model.User;
+import com.hare.utils.TokenUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.bind.annotation.*;
